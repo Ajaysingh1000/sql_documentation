@@ -1,0 +1,46 @@
+basic groupBy questions : - 
+
+Retrieve the total number of students in each department.
+Retrieve the average GPA of students in each department.
+Retrieve the highest GPA among all students in each department.
+Retrieve the number of students of each age.
+Retrieve the average GPA of students of each age.
+Retrieve the highest GPA among students of each age.
+Retrieve the total number of students for each instructor.
+Retrieve the average GPA of students for each instructor.
+Retrieve the highest GPA among students for each instructor.
+Retrieve the total number of courses offered in each department.
+Retrieve the average GPA of students in each course.
+Retrieve the highest GPA among students in each course.
+Retrieve the department with the most students.
+Retrieve the department with the highest average GPA.
+Retrieve the instructor with the most courses.
+Retrieve the instructor with the highest average GPA among students.
+Retrieve the course with the most students.
+Retrieve the course with the highest average GPA among students.
+Retrieve the department with the highest number of students under the age of 21.
+Retrieve the department with the highest average GPA among students under the age of 21.
+
+advanced groupby questions :- 
+
+
+Retrieve the department(s) with the highest number of students enrolled.
+Retrieve the department(s) with the highest average GPA among students.
+Retrieve the instructor(s) who have the highest number of students enrolled in their courses.
+Retrieve the instructor(s) who have the highest average GPA among students in their courses.
+Retrieve the course(s) with the highest number of students enrolled.
+Retrieve the course(s) with the highest average GPA among students.
+Retrieve the department(s) with the highest number of courses offered.
+Retrieve the department(s) with the highest average GPA among courses offered.
+Retrieve the course(s) with the highest number of students enrolled under the age of 21.
+Retrieve the course(s) with the highest average GPA among students under the age of 21.
+Retrieve the department(s) with the highest number of students with a GPA above 3.8.
+Retrieve the department(s) with the highest average GPA among students with a GPA above 3.8.
+Retrieve the instructor(s) who have the highest number of courses offered in multiple departments.
+Retrieve the instructor(s) who have the highest average GPA among students in multiple departments.
+Retrieve the course(s) with the highest number of students enrolled in multiple departments.
+Retrieve the course(s) with the highest average GPA among students in multiple departments.
+Retrieve the department(s) with the highest number of students above the age of 20.
+Retrieve the department(s) with the highest average GPA among students above the age of 20.
+Retrieve the instructor(s) who have the highest number of courses offered with an average GPA above 3.5.
+Retrieve the instructor(s) who have the highest average GPA among students in courses with an average GPA above 3.5.

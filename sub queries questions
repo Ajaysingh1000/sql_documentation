@@ -1,0 +1,40 @@
+Basic Level Questions:
+
+Retrieve the first name and last name of customers who are from the city 'New York'.
+Retrieve the order IDs of orders placed by customers from the country 'United States'.
+Retrieve the total amount of each order.
+Retrieve the first name and last name of customers who have placed orders.
+Retrieve the order IDs of orders with a total amount greater than 1000.
+Retrieve the first name and last name of customers who have not placed any orders.
+Retrieve the first name and last name of customers who have placed orders in the year 2022.
+Retrieve the order IDs of orders placed by customers whose last name starts with 'S'.
+Retrieve the total amount of orders placed by customers from the city 'London'.
+Retrieve the first name and last name of customers who have placed orders with a total amount greater than the average total amount of all orders.
+
+
+Intermediate Level Questions:
+11. Retrieve the first name and last name of customers who have placed orders with a total amount greater than the maximum total amount of orders placedby customers from the same city.
+
+Retrieve the order IDs of orders with a total amount greater than the average total amount of all orders.
+Retrieve the first name and last name of customers who have placed orders in the year 2021 or 2023.
+Retrieve the order IDs of orders with a total amount greater than the total amount of the highest order.
+Retrieve the first name and last name of customers who have placed orders with a total amount greater than the total amount of the order with the highest total amount.
+Retrieve the order IDs of orders placed by customers whose country is different from the country of the customer with the highest customer ID.
+Retrieve the first name and last name of customers who have placed orders with a total amount greater than the average total amount of orders placed by customers from the same country.
+Retrieve the order IDs of orders with a total amount greater than the sum of the total amounts of all orders placed by customers from the same city.
+Retrieve the first name and last name of customers who have placed orders with a total amount greater than the total amount of orders placed by customers from the same country.
+Retrieve the order IDs of orders placed by customers whose last name is the same as the last name of the customer with the lowest customer ID.
+Retrieve the first name and last name of customers who have placed at least two orders.
+Retrieve the order IDs of orders placed by customers whose total amount is greater than the total amount of all orders placed by customers from the same city.
+Retrieve the first name and last name of customers who have placed orders with a total amount greater than the total amount of all orders placed by customers from the same country in the year 2022.
+Retrieve the order IDs of orders with a total amount greater than the average total amount of orders placed by customers from the same city.
+Retrieve the first name and last name of customers who have placed orders with a total amount greater than the total amount of the average order.
+
+
+Advanced Level Questions:
+26. Retrieve the order IDs of orders placed by customers whose country has more than one customer.
+
+Retrieve the first name and last name of customers who have placed orders with a total amount greater than the average total amount of orders placed by customers from the same country in the year 2021 or 2023.
+Retrieve the order IDs of orders with a total amount greater than the maximum total amount of orders placed by customers from the same city in the year 2022.
+Retrieve the first name and last name of customers who have placed orders with a total amount greater than the sum of the total amounts of all orders placed by customers from the same country.
+Retrieve the order IDs of orders placed by customers whose total amount is greater than the total amount of all orders placed by customers from the same country in the year 2021 or 2023.

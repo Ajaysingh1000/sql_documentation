@@ -1,0 +1,41 @@
+-- Creating the 'students' table
+CREATE TABLE students (
+  student_id SERIAL PRIMARY KEY,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  age INT,
+  department VARCHAR(50),
+  gpa DECIMAL(3, 2)
+);
+
+-- Inserting data into the 'students' table
+INSERT INTO students (first_name, last_name, age, department, gpa)
+VALUES
+  ('John', 'Doe', 20, 'Science', 3.75),
+  ('Jane', 'Smith', 22, 'Arts', 3.80),
+  ('Michael', 'Johnson', 21, 'Science', 3.90),
+  ('Emily', 'Davis', 19, 'Arts', 3.60),
+  ('David', 'Wilson', 20, 'Science', 3.85),
+  ('Sarah', 'Jones', 22, 'Arts', 3.70),
+  ('Robert', 'Brown', 21, 'Science', 3.80),
+  ('Jennifer', 'Lee', 20, 'Arts', 3.95),
+  ('Matthew', 'Taylor', 19, 'Science', 3.60),
+  ('Amy', 'Miller', 21, 'Arts', 3.70);
+  
+-- Creating the 'courses' table
+CREATE TABLE courses (
+  course_id SERIAL PRIMARY KEY,
+  course_name VARCHAR(50),
+  department VARCHAR(50),
+  instructor VARCHAR(50)
+);
+
+-- Inserting data into the 'courses' table
+INSERT INTO courses (course_name, department, instructor)
+VALUES
+  ('Mathematics', 'Science', 'Dr. Johnson'),
+  ('History', 'Arts', 'Prof. Smith'),
+  ('Physics', 'Science', 'Dr. Davis'),
+  ('Literature', 'Arts', 'Prof. Wilson'),
+  ('Chemistry', 'Science', 'Dr. Thompson');
+

@@ -1,0 +1,23 @@
+Instructions: Design a database schema to store information about a library. Answer the following questions by creating the necessary tables with appropriate columns and data types.
+
+1. Create a table named "Books" to store information about books in the library. The table should include columns for book ID, title, author, genre, and publication year.
+
+2. Create a table named "Authors" to store information about authors. The table should include columns for author ID, first name, last name, and biography.
+
+3. Create a table named "Members" to store information about library members. The table should include columns for member ID, first name, last name, address, and contact number.
+
+4. Create a table named "Borrowings" to track books borrowed by members. The table should include columns for borrowing ID, book ID (foreign key referencing the Books table), member ID (foreign key referencing the Members table), borrowing date, and return date.
+
+5. Create a table named "Categories" to store different book categories. The table should include columns for category ID and category name.
+
+6. Add appropriate primary key constraints to each table.
+
+7. Add appropriate foreign key constraints to ensure referential integrity between tables where necessary.
+
+8. Insert at least three books, three authors, three members, and three categories into their respective tables.
+
+9. Write a query to retrieve the titles of all books borrowed by a specific member.
+
+10. Write a query to retrieve the names of all members who have borrowed books in a specific genre.
+
+Note: You can add additional columns or tables as needed to accommodate your design.
