@@ -1,0 +1,32 @@
+select statement assignment questions:-
+
+Find the minimum salary among all employees.
+Find the maximum age among all employees.
+Calculate the average salary of employees.
+Find the department with the highest number of employees.
+Retrieve the first name and last name of the employee with the highest salary.
+Calculate the total salary expenditure of the Finance department.
+Retrieve the department name along with the average salary of employees in each department.
+Find the employee(s) with the highest salary in the Sales department.
+Calculate the total number of employees in the company.
+Find the department(s) with an average employee age greater than 30.
+Retrieve the employee ID, first name, and last name of employees who are managers.
+Calculate the difference between the highest and lowest salaries in the company.
+Retrieve the department name and the total number of employees in each department.
+Find the employee(s) with the lowest salary in the company.
+Calculate the average age of employees in the Finance department.
+Retrieve the first name and last name of employees who have the same salary.
+Find the department(s) where the average salary is greater than the overall average salary.
+Retrieve the employee ID, first name, and last name of the oldest employee.
+Calculate the total salary expenditure of each department.
+Find the department(s) with more than five employees.
+Retrieve the employee(s) with the second-highest salary in the company.
+Calculate the average salary of employees younger than 30.
+Retrieve the first name, last name, and department name of employees, sorted by department name in ascending order.
+Find the department(s) where the maximum salary is above $5000.
+Retrieve the department name along with the total salary expenditure in each department.
+Find the employee(s) with the highest salary in each department.
+Calculate the average salary of employees in the Sales department.
+Retrieve the first name and last name of employees who are not managers.
+Find the employee(s) with a salary above the company-wide average salary.
+Retrieve the first name, last name, and salary of the three employees with the highest salaries.

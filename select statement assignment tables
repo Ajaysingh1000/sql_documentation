@@ -1,0 +1,43 @@
+select statement assignments :-
+
+create these two tables:
+
+CREATE TABLE Employees (
+  EmployeeID SERIAL PRIMARY KEY,
+  FirstName VARCHAR(50),
+  LastName VARCHAR(50),
+  Age INT,
+  Salary DECIMAL(10, 2),
+  DepartmentID INT
+);
+
+
+----------------------------------
+
+CREATE TABLE Departments (
+  DepartmentID SERIAL PRIMARY KEY,
+  DepartmentName VARCHAR(50),
+  ManagerID INT
+);
+
+----------------------------------
+
+INSERT INTO Employees (FirstName, LastName, Age, Salary, DepartmentID)
+VALUES
+  ('John', 'Doe', 30, 5000.00, 1),
+  ('Jane', 'Smith', 25, 4500.00, 2),
+  ('Michael', 'Johnson', 35, 6000.00, 1),
+  ('Emily', 'Davis', 28, 5500.00, 3),
+  ('Daniel', 'Wilson', 32, 5200.00, 1)
+
+
+
+----------------------------------------------
+
+INSERT INTO Departments (DepartmentName, ManagerID)
+VALUES
+  ('Sales', 1),
+  ('Finance', 2),
+  ('HR', 3),
+  ('Marketing', 4),
+  ('IT', 5)

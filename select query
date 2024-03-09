@@ -1,0 +1,122 @@
+-- Creating the 'students' table
+CREATE TABLE students (
+  student_id SERIAL PRIMARY KEY,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  age INT,
+  grade VARCHAR(10)
+);
+
+-- Inserting data into the 'students' table
+INSERT INTO students (first_name, last_name, age, grade)
+VALUES 
+  ('John', 'Doe', 18, 'A'),
+  ('Jane', 'Smith', 17, 'B'),
+  ('Michael', 'Johnson', 19, 'A'),
+  ('Emily', 'Davis', 18, 'B'),
+  ('David', 'Wilson', 17, 'A');
+
+-- SELECT queries
+
+-- 1. Retrieve all students
+SELECT * FROM students;
+-- This query retrieves all records from the 'students' table.
+
+-- 2. Retrieve students with grade 'A'
+SELECT * FROM students WHERE grade = 'A';
+-- This query retrieves students from the 'students' table whose grade is 'A'.
+
+-- 3. Retrieve students older than 17
+SELECT * FROM students WHERE age > 17;
+-- This query retrieves students from the 'students' table whose age is greater than 17.
+
+-- 4. Retrieve the youngest student
+SELECT * FROM students ORDER BY age ASC LIMIT 1;
+-- This query retrieves the student with the lowest age from the 'students' table.
+
+-- 5. Retrieve students with their full names
+SELECT student_id, CONCAT(first_name, ' ', last_name) AS full_name FROM students;
+-- This query concatenates the 'first_name' and 'last_name' columns and renames the result as 'full_name'.
+
+-- 6. Retrieve the count of students
+SELECT COUNT(*) FROM students;
+-- This query returns the total count of students in the 'students' table.
+
+-- 7. Retrieve students in alphabetical order by their first names
+SELECT * FROM students ORDER BY first_name;
+-- This query retrieves all students from the 'students' table and orders them alphabetically by their first names.
+
+-- 8. Retrieve students in descending order by their ages
+SELECT * FROM students ORDER BY age DESC;
+-- This query retrieves all students from the 'students' table and orders them in descending order by their ages.
+
+-- 9. Retrieve the average age of students
+SELECT AVG(age) FROM students;
+-- This query calculates the average age of students in the 'students' table.
+
+-- 10. Retrieve the maximum age of students
+SELECT MAX(age) FROM students;
+-- This query retrieves the maximum age among all students in the 'students' table.
+
+-- 11. Retrieve students grouped by grades with the count of students in each grade
+SELECT grade, COUNT(*) FROM students GROUP BY grade;
+-- This query groups students by their grades and returns the count of students in each grade.
+
+-- 12. Retrieve students whose first names start with 'J'
+SELECT * FROM students WHERE first_name LIKE 'J%';
+-- This query retrieves students whose first names start with the letter 'J'.
+
+-- 13. Retrieve the top 3 oldest students
+SELECT * FROM students ORDER BY age DESC LIMIT 3;
+-- This query retrieves the top 3 oldest students from the 'students' table.
+
+-- 14. Retrieve students with ages between 17 and 19 (inclusive)
+SELECT * FROM students WHERE age BETWEEN 17 AND 19;
+-- This query retrieves students with ages between 17 and 19 (inclusive).
+
+-- 15. Retrieve students with grade 'A' or 'B'
+SELECT * FROM students WHERE grade IN ('A', 'B');
+-- This query retrieves students with grade 'A' or 'B' from the 'students' table.
+
+-- 16. Retrieve students with age greater than the average age
+SELECT * FROM students WHERE age > (SELECT AVG(age) FROM students);
+-- This query retrieves students from the 'students' table whose age is greater than the average age of all students.
+
+-- 17. Retrieve students with the same first name
+SELECT first_name, COUNT(*) FROM students GROUP BY first_name HAVING COUNT(*) > 1;
+-- This query retrieves students with the same first name and returns the count of students for each duplicate first name.
+
+-- 18. Retrieve students ordered by grade and then by age in descending order
+SELECT * FROM students ORDER BY grade, age DESC;
+-- This query retrieves students from the 'students' table and orders them first by grade and then by age in descending order.
+
+-- 19. Retrieve the count of students in each grade sorted by grade in descending order
+SELECT grade, COUNT(*) FROM students GROUP BY grade ORDER BY grade DESC;
+-- This query retrieves the count of students in each grade and orders them by grade in descending order.
+
+-- 20. Retrieve students with their grades as 'A' and age greater than 17
+SELECT * FROM students WHERE grade = 'A' AND age > 17;
+-- This query retrieves students from the 'students' table whose grade is 'A' and age is greater than 17.
+
+-- 21. Retrieve students with their full names and ages, sorted by age in ascending order
+SELECT CONCAT(first_name, ' ', last_name) AS full_name, age FROM students ORDER BY age;
+-- This query retrieves the full names and ages of students from the 'students' table and orders them by age in ascending order.
+
+-- 22. Retrieve students whose last names contain the letter 's'
+SELECT * FROM students WHERE last_name LIKE '%s%';
+-- This query retrieves students whose last names contain the letter 's'.
+
+-- 23. Retrieve students with their grades as 'A' and ages greater than 17, ordered by age in descending order
+SELECT * FROM students WHERE grade = 'A' AND age > 17 ORDER BY age DESC;
+-- This query retrieves students from the 'students' table whose grade is 'A' and age is greater than 17, and orders them by age in descending order.
+
+-- 24. Retrieve students whose first names start with 'J' and have an age greater than 17
+SELECT * FROM students WHERE first_name LIKE 'J%' AND age > 17;
+-- This query retrieves students whose first names start with 'J' and have an age greater than 17.
+
+-- 25. Retrieve students with their ages as multiples of 3
+SELECT * FROM students WHERE age % 3 = 0;
+-- This query retrieves students from the 'students' table whose ages are multiples of 3.
+
+-- Feel free to add more SELECT queries based on specific scenarios or topics you want to cover in your session.
+
